@@ -47,7 +47,7 @@ export default function About() {
             </Container>
             <Paper
               variant="outlined"
-              sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}
+              sx={{ my: { xs: 3, md: 3 }, p: { xs: 2, md: 3 } }}
             >
               <Typography variant="body1" align="justify" color="colors.white">
                 &emsp;Hello! I’m a web and mobile developer with experience in

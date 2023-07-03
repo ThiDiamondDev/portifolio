@@ -54,7 +54,7 @@ function Copyright() {
   return (
     <Typography variant="body2">
       {isContactPage && <UnsplashLinks />}
-      {"Copyright © "}
+      {"Website Copyright © "}
       <Link color="colors.green" href="/contact">
         Thiago Santana
       </Link>{" "}
@@ -95,7 +95,7 @@ export default function StickyFooter() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            Website created with React, Next.js and Material Design
+            Website created with React, Next.js and Material Design.
           </Typography>
           <br />
           <Copyright />
