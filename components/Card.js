@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
-export default function MyCard({ key, item }) {
+export default function MyCard({ item }) {
   return (
     <Grid item key={item} xs={12} sm={6} md={4}>
       <Card
