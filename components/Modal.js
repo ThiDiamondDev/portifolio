@@ -22,7 +22,12 @@ export default function TransitionsModal({
         slots={{ backdrop: StyledBackdrop }}
       >
         <Fade in={open}>
-          <Box maxHeight={"100%"} overflow={"scroll"} sx={style}>
+          <Box
+            maxHeight={"70%"}
+            maxWidth={"80%"}
+            overflow={"scroll"}
+            sx={style}
+          >
             <h2 id="transition-modal-title">{image.title}</h2>
             <span
               id="transition-modal-description"
