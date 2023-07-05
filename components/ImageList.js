@@ -1,11 +1,15 @@
 import { ImageList, ImageListItem } from "@mui/material";
 const itemData = [
-  { img: "/PortfolioImages/guitar.png", title: "8 Strings Guitar" },
-  { img: "/PortfolioImages/church2.png", title: "Old Country Church" },
   { img: "/PortfolioImages/CLOCK.png", title: "Old Clock" },
+
   { img: "/PortfolioImages/revolver.png", title: "Revolver" },
+  { img: "/PortfolioImages/guitar.png", title: "8 Strings Guitar" },
+
+  { img: "/PortfolioImages/CHURCH-INSIDE.png", title: "Old Church Interior" },
+
   { img: "/PortfolioImages/Monster.png", title: "Horror Creature" },
   { img: "/PortfolioImages/art.png", title: "Art the Clown from Terrifier" },
+
   { img: "/PortfolioImages/scyth.png", title: "Death Scythe" },
   { img: "/PortfolioImages/Taurus.png", title: "Minotaurus" },
 ];
