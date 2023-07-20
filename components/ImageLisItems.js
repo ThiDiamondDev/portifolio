@@ -1,10 +1,12 @@
 const itemData = [
+  { img: "GhostFaceTopology.png", title: "GhostFace Retopology" },
+
   { img: "CLOCK.png", title: "Old Clock" },
 
-  { img: "revolver.png", title: "Revolver" },
   { img: "DonnieDarkoCompressed.png", title: "Donnie Darko" },
-
   { img: "guitar.png", title: "8 Strings Guitar" },
+
+  { img: "revolver.png", title: "Revolver" },
 
   { img: "CHURCH-INSIDE.png", title: "Old Church Interior" },
 
