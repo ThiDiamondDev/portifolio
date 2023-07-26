@@ -3,14 +3,16 @@ const itemData = [
 
   { img: "CLOCK.png", title: "Old Clock" },
 
-  { img: "DonnieDarkoCompressed.png", title: "Donnie Darko" },
   { img: "guitar.png", title: "8 Strings Guitar" },
   { img: "monsterretopo.png", title: "Monster Retopology" },
 
-  { img: "revolver.png", title: "Revolver" },
+  { img: "room.png", title: "Cool room" },
+  { img: "music.png", title: "Music room" },
 
+  { img: "revolver.png", title: "Revolver" },
   { img: "CHURCH-INSIDE.png", title: "Old Church Interior" },
 
+  { img: "DonnieDarkoCompressed.png", title: "Donnie Darko" },
   { img: "art.png", title: "Art the Clown from Terrifier" },
   { img: "Monster.png", title: "Horror Creature" },
 
