@@ -32,7 +32,7 @@ export default function MySwiper() {
             title="YouTube video player"
             frameborder="0"
             allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowfullScreen
           ></iframe>
         </SwiperSlide>
         <SwiperSlide>
@@ -43,7 +43,7 @@ export default function MySwiper() {
             title="YouTube video player"
             frameborder="0"
             allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowfullScreen
           ></iframe>
         </SwiperSlide>
       </Swiper>
