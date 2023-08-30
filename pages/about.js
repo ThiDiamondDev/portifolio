@@ -53,11 +53,8 @@ export default function About() {
                 &emsp;Hello! I’m a web and mobile developer with experience in
                 game development and 3D modeling and sculpting. I specialize in
                 creating interactive and engaging experiences for users. My
-                skills include HTML, CSS, JavaScript, React, Unity, Blender, and
-                Maya. I have worked on several projects ranging from simple
-                websites to complex mobile applications and games. I am
-                passionate about creating innovative solutions that meet the
-                needs of my clients.
+                skills include HTML, CSS, JavaScript, React, NodeJS, Blender,
+                and now my focus is build experiences with Unreal Engine.
                 <br />
                 <br />
                 &emsp;I have a strong understanding of user experience and
@@ -70,12 +67,12 @@ export default function About() {
                 best possible solutions
                 <br />
                 <br />
-                &emsp;I am skilled in understanding my clients needs and
-                requirements and providing them with customized solutions that
-                meet their specific goals. I am also experienced in working with
-                teams and collaborating with other developers, designers, and
-                stakeholders to ensure that projects a re completed on time and
-                within budget.
+                &emsp;With Unreal Engine 5, I have worked on the top of the new
+                features, like Lumen, Nanite and Procedural Content Generation,
+                creating beautiful, optimized and functional experiences using
+                Blueprints. I also have solid skills in programming languages
+                like C++, python and JavaScript to integrate in any project and
+                build solutions at scale.
               </Typography>
             </Paper>
           </Container>
