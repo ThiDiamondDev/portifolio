@@ -10,6 +10,7 @@ import theme from "../src/theme";
 import { useRouter } from "next/router";
 import TransitionsModal from "../components/Modal";
 import MyImageList from "../components/ImageList";
+import MySwiper from "../components/MySwiper";
 
 export default function Home() {
   const [open, setOpen] = React.useState(false);
@@ -54,14 +55,14 @@ export default function Home() {
               paragraph
             >
               Welcome to my portfolio website!
-              <br /> I'm a 3D modeler and software developer with a passion for
+              <br /> I'm a 3D modeler and game developer with a passion for
               creating immersive digital experiences.
               <br />
               <br /> Take a look at my portfolio to see some of my recent work
               and get in touch to discuss your next project!
             </Typography>
             <Stack
-              sx={{ pt: 4 }}
+              sx={{ pt: 4, mb: 10 }}
               direction="row"
               spacing={2}
               justifyContent="center"
@@ -85,6 +86,7 @@ export default function Home() {
               </Button>
             </Stack>
           </Container>
+          <MySwiper style={{ padding: 150 }} />
         </Box>
         <Container sx={{ bgcolor: "background.main", py: 8 }} maxWidth="md">
           <MyImageList onClick={handleOpen} />
