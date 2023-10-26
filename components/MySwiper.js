@@ -26,24 +26,24 @@ export default function MySwiper() {
       >
         <SwiperSlide>
           <iframe
+            style={{ border: "0px" }}
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/381aXv8JCC0?si=XbynramB65uBH5D0"
             title="YouTube video player"
-            frameborder="0"
             allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullScreen
+            allowFullScreen
           ></iframe>
         </SwiperSlide>
         <SwiperSlide>
           <iframe
+            style={{ border: "0px" }}
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/1mwmJr7jOyo?si=svFTpat5cV6dbAI0"
             title="YouTube video player"
-            frameborder="0"
             allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullScreen
+            allowFullScreen
           ></iframe>
         </SwiperSlide>
       </Swiper>

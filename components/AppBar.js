@@ -17,14 +17,19 @@ import { useTheme } from "@mui/material";
 import { useRouter } from "next/router";
 
 const drawerWidth = 240;
-const navItems = ["home", "about", "contact"];
+const navItemsEN = ["home", "about", "contact"];
+const navItemsPT = ["home", "Sobre mim", "Contato"];
+
+const navContent = {
+  "en-US": navItemsEN,
+  "pt-BR": navItemsPT,
+};
 
 function MyAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const router = useRouter();
-
+  const { locale, push } = useRouter();
+  const navItems = navContent[locale];
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
@@ -38,7 +43,7 @@ function MyAppBar(props) {
           <ListItem
             key={item}
             disablePadding
-            onClick={() => router.push(`/${item}`)}
+            onClick={() => push(`${locale}/${navItemsEN[index]}`)}
           >
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
@@ -70,10 +75,10 @@ function MyAppBar(props) {
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           ></Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <Button
                 key={item}
-                onClick={() => router.push(`/${item}`)}
+                onClick={() => push(`${locale}/${navItemsEN[index]}`)}
                 sx={{ color: "#fff" }}
               >
                 {item}

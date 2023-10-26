@@ -11,6 +11,8 @@ import { useRouter } from "next/router";
 import TransitionsModal from "../components/Modal";
 import MyImageList from "../components/ImageList";
 import MySwiper from "../components/MySwiper";
+import IndexContent from "../content";
+import Header from "../components/Header";
 
 export default function Home() {
   const [open, setOpen] = React.useState(false);
@@ -19,10 +21,12 @@ export default function Home() {
     setImage(image);
     setOpen(true);
   };
-  const router = useRouter();
-
+  const { locale, push } = useRouter();
+  const { pageContent, contactButtonText, aboutButtonText } =
+    IndexContent[locale];
   return (
     <>
+      <Header title={"Home"} />
       <TransitionsModal
         image={currentImage}
         open={open}
@@ -54,12 +58,7 @@ export default function Home() {
               color="colors.white"
               paragraph
             >
-              Welcome to my portfolio website!
-              <br /> I'm a 3D modeler and game developer with a passion for
-              creating immersive digital experiences.
-              <br />
-              <br /> Take a look at my portfolio to see some of my recent work
-              and get in touch to discuss your next project!
+              {pageContent}
             </Typography>
             <Stack
               sx={{ pt: 4, mb: 10 }}
@@ -72,17 +71,17 @@ export default function Home() {
                 color="green"
                 style={{ color: "black" }}
                 variant="contained"
-                onClick={() => router.push("/contact")}
+                onClick={() => push(`${locale}/contact`)}
               >
-                Contact me
+                {contactButtonText}
               </Button>
               <Button
                 size="large"
                 color="green"
                 variant="outlined"
-                onClick={() => router.push("/about")}
+                onClick={() => push(`${locale}/about`)}
               >
-                More about me
+                {aboutButtonText}
               </Button>
             </Stack>
           </Container>
