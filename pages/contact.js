@@ -18,24 +18,8 @@ import {
 import MyCard from "../components/Card";
 import { Tooltip } from "@mui/material";
 import { links } from "../components/Links";
-
-const cards = [
-  {
-    image: "/joan-gamell-ZS67i1HLllo-unsplash.jpg",
-    title: "Web and Mobile Development",
-    description: "",
-  },
-  {
-    image: "/warren-hansen-uCMNeSNS54U-unsplash.jpg",
-    title: "3D Modeling, Rigging and Animation",
-    description: "",
-  },
-  {
-    image: "/jose-gil-2pNdTBn4C7U-unsplash.jpg",
-    title: "Game Design and Production",
-    description: "",
-  },
-];
+import ContactContent from "../content/contact";
+import Header from "../components/Header";
 
 function ContactButton({ item, onClick }) {
   return (
@@ -54,9 +38,11 @@ function ContactButton({ item, onClick }) {
 }
 
 export default function Home() {
-  const router = useRouter();
+  const { locale, push } = useRouter();
+  const { title, cards, pageContent } = ContactContent[locale];
   return (
     <>
+      <Header title={title} />
       <CssBaseline />
       <main style={{ background: theme.palette.background.main }}>
         {/* Hero unit */}
@@ -75,7 +61,7 @@ export default function Home() {
               color="colors.white"
               gutterBottom
             >
-              Contact me
+              {title}
             </Typography>
             <Typography
               variant="h5"
@@ -83,8 +69,7 @@ export default function Home() {
               color="colors.white"
               paragraph
             >
-              Here are my social networks for especialized contact and
-              assistance for any help in your favorite platform.
+              {pageContent}
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -96,7 +81,7 @@ export default function Home() {
                 <ContactButton
                   key={index}
                   item={item}
-                  onClick={() => router.push(item.link)}
+                  onClick={() => push(item.link)}
                 />
               ))}
             </Stack>
@@ -110,7 +95,7 @@ export default function Home() {
                 <ContactButton
                   key={index + 3}
                   item={item}
-                  onClick={() => router.push(item.link)}
+                  onClick={() => push(item.link)}
                 />
               ))}
             </Stack>
