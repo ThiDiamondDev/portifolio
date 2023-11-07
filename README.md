@@ -1,45 +1,13 @@
-# Material UI - Next.js example
 
-## How to use
+# Portfolio Website
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+This is a portfolio website project that showcases my 3D rendering with Blender and game development with Unreal Engine 5. The website displays some rendered images and videos.
 
-<!-- #default-branch-switch -->
+# The Project
+This project uses Next.js, a framework for server-rendered React apps, Material UI, a popular UI library for React and i18n for translated versions in en-US and pt-BR. The website is deployed and hosted on Vercel
 
-```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-next
-cd material-next
-```
+# About the Developer
 
-Install it and run:
+This project was developed by me, Thiago Santana, a software developer with experience in 3D rendering and game development. You can find more information about me on my [personal website](https://thiago-santana.vercel.app/en-US).
 
-```sh
-npm install
-npm run dev
-```
-
-or:
-
-<!-- #default-branch-switch -->
-
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-next)
-
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-next)
-
-## The idea behind the example
-
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5.
-If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
-
-## The Link component
-
-The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/material-next-ts) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
-More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+[versão em português](https://thiago-santana.vercel.app/en-US)
