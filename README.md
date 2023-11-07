@@ -10,4 +10,4 @@ This project uses Next.js, a framework for server-rendered React apps, Material 
 
 This project was developed by me, Thiago Santana, a software developer with experience in 3D rendering and game development. You can find more information about me on my [personal website](https://thiago-santana.vercel.app/en-US).
 
-[versão em português](https://thiago-santana.vercel.app/en-US)
+[versão em português](https://thiago-santana.vercel.app/pt-BR)
