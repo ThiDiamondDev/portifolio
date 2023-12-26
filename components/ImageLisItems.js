@@ -20,7 +20,6 @@ const itemData = [
 
   { img: "scyth.png", title: "Death Scythe" },
   { img: "Taurus.png", title: "Minotaurus" },
-  { img: "DonnieDarkoCompressed.png", title: "Donnie Darko" },
 ];
 
 export default itemData.map(({ img, title }) => ({
